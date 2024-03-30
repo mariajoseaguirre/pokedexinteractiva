@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Pokedex</title>
+    <meta property="og:title" content="Creando una Pokedex interactiva" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Taller creando una increible Pokedex" />
+    <meta property="og:url" content="https://cesarchoqueskater.github.io/pokedex-javascript/" />
+    <meta property="og:image" content="https://cesarchoqueskater.github.io/pokedex-javascript/design/Pokedex.jpg" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/./faviconandroid-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <main class="pokedex" id="pokedex" tabindex="0">
+        <section class="pokedex-main" aria-label="Información general del Pokémon">
+            <div class="header-shadow">
+                <div class="header">
+                    <span class="light is-big is-sky" id="light"></span>
+                    <span class="light is-red"></span>
+                    <span class="light is-yellow"></span>
+                    <span class="light is-green"></span>
+                </div>
+            </div>
+            <div class="screen">
+                <div class="screen-border">
+                    <div class="screen-safeArea" id=screen>
+                        <img src="" alt="" id="image">
+                    </div>
+                    <div class="screen-light">
+                        <div class="light-bottom">
+                            <span class="light is-medium is-red-dark"></span>
+                            <span class="light is-medium is-red-dark"></span>
+                        </div>
+                        <div class="icon-hamburguer">
+                            <span class="lineal"></span>
+                            <span class="lineal"></span>
+                            <span class="lineal"></span>
+                            <span class="lineal"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="variants">
+                    <button class="button-variants is-veryBig" id="idRandomButton"></button>
+                    <div class="button-variants-large">
+                        <span class="button-large is-yellow"></span>
+                        <span class="button-large is-black"></span>
+                    </div>
+                </div>
+                <form role="search" id="form" class="search">
+                    <input type="text" name="id" id="id" placeholder="¿Quíen es ese Pokémon?" autocomplete="off">
+                </form>
+                <div class="description">
+                    <p id="description">Buscar a un pokémon para obtener todas sus caracteristicas</p>
+                </div>
+                <div class="navigation">
+                    <button id="next-pokemon" class="navigation-right" aria-label="Siguiente Pokémon"></button>
+                    <button id="prev-pokemon" class="navigation-left" aria-label="Pokémon Anterior"></button>
+                    <button id="next-image" class="navigation-down" aria-label="Siguiente imagen del Pokémon"></button>
+                    <button id="prev-image" class="navigation-up" aria-label="Imagen anterior del Pokémon"></button>
+                </div>
+            </div>
+        </section>
+        <div class="cover-front">
+            cover front
+        </div>
+        <section class="cover-back" aria-label="Estadisticas del Pokémon">
+            <div class="stats">
+                <canvas id="stats" width="350" height="350"></canvas>
+            </div>
+            <div class="characteristic">
+                <div class="characteristic-weight" id="weight">altura</div>
+                <div class="characteristic-height" id="height">peso</div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>

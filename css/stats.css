@@ -1,0 +1,7 @@
+.stats {
+    background-color: var(--secondary);
+    padding: 1rem;
+    border-radius: .5rem;
+    /*  Para que se amplie, como un width */
+    /* flex-grow: 1; */
+}

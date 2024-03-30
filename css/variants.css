@@ -1,0 +1,46 @@
+.variants {
+    grid-area: variants;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.button-variants-large {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.button-variants {
+    background-color: var(--secondary);
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 0 var(--black));
+    cursor: pointer;
+    border: 1px solid var(--secondary);
+}
+
+.button-variants:active {
+    transform: scale(.9);
+}
+
+.is-veryBig {
+    block-size: 2.5rem;
+    inline-size: 2.5rem;
+}
+
+.button-large {
+    block-size: 0.5rem;
+    inline-size: 1.9rem;
+    border-radius: 2rem;
+}
+
+.button-large.is-black {
+    background-color: var(--secondary);
+    filter: drop-shadow(2px 2px 0 var(--black));
+}
+
+.button-large.is-yellow {
+    background-color: #FECB2F;
+    filter: drop-shadow(2px 2px 0 #D2AB33);
+}

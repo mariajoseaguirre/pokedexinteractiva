@@ -1,0 +1,19 @@
+.characteristic {
+    margin-block-start: 1rem;
+    color: #dfc812;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.characteristic-weight,
+.characteristic-height {
+    background-color: black;
+    /* padding-inline: 3rem; */
+    border-radius: .25rem;
+    inline-size: 8.4rem;
+    block-size: 2.5rem;
+    line-height: 2.5rem;
+    padding-inline-start: .5rem;
+}
